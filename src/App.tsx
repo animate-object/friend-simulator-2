@@ -1,24 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import { image } from "./image";
+import cafeBar from "./assets/backgrounds/cafe-bar.jpg";
+import zuckerberg from "./assets/friend/zuckerberg.png";
+import { Effect2, Effect1 } from "./effect";
+import { containFit } from "./dim";
+
+type CanvasFn = Effect2<CanvasRenderingContext2D, HTMLCanvasElement>;
+
+const withCtxFactory = (canvasEl: HTMLCanvasElement | null) => {
+  return (fn: CanvasFn) => {
+    if (canvasEl) {
+      const ctx = canvasEl.getContext("2d");
+      if (ctx) {
+        // ctx.imageSmoothingEnabled = true;
+        // ctx.imageSmoothingQuality = "high";
+        fn(ctx, canvasEl);
+      }
+    }
+  };
+};
 
 function App() {
+  const [ref, setRef] = useState<HTMLCanvasElement | null>(null);
+  const withCtx = withCtxFactory(ref);
+  useEffect(() => {
+    image(cafeBar, (img) => {
+      withCtx((ctx, el) => {
+        ctx.drawImage(img, 0, 0, el.width, el.height);
+      });
+    });
+    image(zuckerberg, (img) => {
+      withCtx((ctx, el) => {
+        const smallBox = { width: el.width * 0.7, height: el.height * 0.7 };
+        const orig = { width: img.width, height: img.height };
+        const scaled = containFit(orig, smallBox);
+        ctx.drawImage(
+          img,
+          0,
+          el.height - scaled.height,
+          scaled.width,
+          scaled.height
+        );
+      });
+    });
+  }, [withCtx]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <canvas ref={(ref) => setRef(ref)} />
     </div>
   );
 }
