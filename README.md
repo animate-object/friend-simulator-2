@@ -11,20 +11,21 @@ An authentic, comprehensive simulation of friendship.
 
 ## milestone 1 ･ friend acquisition arena [in flight]
 - [x] basic layout 
-- [] realtime friend info displays
--  [] imperative dialog controls
-- [] distraction qtes
-- [] comprehension quiz
-- [] friend arena e2e with staged data from mock api
+- [ ] realtime friend info displays
+- [ ] imperative dialog controls
+- [ ] distraction qtes
+- [ ] comprehension quiz
+- [ ] friend arena e2e with staged data from mock api
 
 ## milestone 2 ･ complex friends [on deck]
-- [] backend API generates complex friends on the fly
+- [ ] backend API generates complex friends on the fly
 
 ## milestone 3 ･ total friendship experience
-- [] interstitial experience (map and locations etc)
-- [] narrative finale experience
+- [ ] interstitial experience (map and locations etc)
+- [ ] narrative finale experience
 
 ## milestone 4 ･ additional content 
+- [ ] spend a lot of time in GIMP
 
 ### thx create react app
 
