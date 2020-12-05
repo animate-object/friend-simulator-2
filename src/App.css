@@ -1,8 +1,64 @@
 body {
   margin: 0;
-}
-
-canvas {
   height: 100vh;
   width: 100vw;
+}
+
+.fill-parent {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.grid > div {
+  overflow: hidden;
+}
+
+.red {
+  border: 2px solid red;
+}
+
+.yellow {
+  border: 2px solid yellow;
+}
+
+.content-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.friend {
+  width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(4px 4px 2px #222222) drop-shadow(-4px -4px 2px #222222);
+}
+
+.friend-summary {
+  background-color: whitesmoke;
+
+  padding: 2rem 2rem 2rem 2rem;
+  position: absolute;
+  left: 0;
+  top: 2rem;
+}
+
+.friend-summary {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  width: 25%;
+  text-align: right;
+  box-shadow: 4px 4px 6px #222222;
 }

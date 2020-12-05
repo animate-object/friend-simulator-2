@@ -1,0 +1,40 @@
+.text {
+  font-size: 2rem;
+  color: whitesmoke;
+  user-select: none;
+  font-weight: 200;
+  width: fit-content;
+}
+
+.dark-background {
+  /* background-color: darkslateblue; */
+  background-image: linear-gradient(to right, darkcyan, darkslateblue);
+  opacity: 0.9;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 2px 2px 2px #111111;
+  transition: all 400ms;
+}
+
+.dark-background:hover {
+  /* background-color: darkslateblue; */
+  background-image: linear-gradient(to right, darkcyan, darkslateblue);
+  opacity: 0.96;
+  box-shadow: 2px 2px 4px #111111;
+}
+
+.scroll-container {
+  overflow: hidden;
+  height: 100%;
+  padding-top: 100%;
+  padding-bottom: 105%;
+  padding: 0 1rem 0 1rem;
+}
+
+.vert-buffer {
+  height: 105%;
+}
+
+.chat-container {
+  /* border-radius: 1rem; */
+}

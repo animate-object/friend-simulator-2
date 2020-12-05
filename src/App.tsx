@@ -1,53 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
-import { image } from "./image";
 import cafeBar from "./assets/backgrounds/cafe-bar.jpg";
-import zuckerberg from "./assets/friend/zuckerberg.png";
-import { Effect2, Effect1 } from "./effect";
-import { containFit } from "./dim";
-
-type CanvasFn = Effect2<CanvasRenderingContext2D, HTMLCanvasElement>;
-
-const withCtxFactory = (canvasEl: HTMLCanvasElement | null) => {
-  return (fn: CanvasFn) => {
-    if (canvasEl) {
-      const ctx = canvasEl.getContext("2d");
-      if (ctx) {
-        // ctx.imageSmoothingEnabled = true;
-        // ctx.imageSmoothingQuality = "high";
-        fn(ctx, canvasEl);
-      }
-    }
-  };
-};
+import Api from "./api";
+import { Chat } from "./Chat";
+import Fake from "./fake";
 
 function App() {
-  const [ref, setRef] = useState<HTMLCanvasElement | null>(null);
-  const withCtx = withCtxFactory(ref);
-  useEffect(() => {
-    image(cafeBar, (img) => {
-      withCtx((ctx, el) => {
-        ctx.drawImage(img, 0, 0, el.width, el.height);
-      });
-    });
-    image(zuckerberg, (img) => {
-      withCtx((ctx, el) => {
-        const smallBox = { width: el.width * 0.7, height: el.height * 0.7 };
-        const orig = { width: img.width, height: img.height };
-        const scaled = containFit(orig, smallBox);
-        ctx.drawImage(
-          img,
-          0,
-          el.height - scaled.height,
-          scaled.width,
-          scaled.height
-        );
-      });
-    });
-  }, [withCtx]);
+  const friend = Api.getFriend();
+
   return (
-    <div className="App">
-      <canvas ref={(ref) => setRef(ref)} />
+    <div className="fill-parent">
+      <img src={cafeBar} className="fill-parent background" alt="local" />
+      <div className="fill-parent background grid">
+        <div className="content-bottom">
+          <img src={friend.image.url} alt="friend-img" className="friend" />
+          <div className="friend-summary">
+            <span className="friend-name">Finbad Hortipants</span>
+          </div>
+        </div>
+        <Chat text={Fake.TEXT} />
+        {/* <div className="yellow" /> */}
+      </div>
     </div>
   );
 }
