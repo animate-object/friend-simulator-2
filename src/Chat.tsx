@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Chat.css";
 
 interface Props {
@@ -9,9 +9,8 @@ const SCROLL_INTERVAL = 25;
 
 export const Chat = ({ text }: Props) => {
   const [ref, setRef] = useState<HTMLDivElement | null>(null);
-  useLayoutEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
-      console.log("interval");
       if (ref) {
         ref.scrollTop += 1;
       }
