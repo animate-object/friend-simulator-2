@@ -2,8 +2,10 @@ Reading comprehension! Quick-time events! Procedural generation! Meters!
 
 It can only mean one thing...
 
-# friend simulator two!! 👩🏽‍🔬👨🏿‍💻🤦🏼‍♂️🙋🏻‍♀️
+# friend simulator two!! 👩🏽‍🔬👨🏿‍💻🤦🏼‍♂️🙋🏻‍♀️ 
+### ➡️➡️➡️ [Check out the latest build here!](https://animate-object.github.io/friend-simulator-2) ⬅️⬅️⬅️
 An authentic, comprehensive simulation of friendship.
+
 
 ![progress1](./docs/progress-pics/prog_1.png)
 
