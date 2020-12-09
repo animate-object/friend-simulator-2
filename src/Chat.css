@@ -7,9 +7,12 @@
 }
 
 .dark-background {
-  /* background-color: darkslateblue; */
-  background-image: linear-gradient(to right, darkcyan, darkslateblue);
-  opacity: 0.9;
+  /* background-color: darkslateblue; 7261 139*/
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 139, 139, 0.96),
+    rgba(72, 61, 139, 0.96)
+  );
   border-radius: 2rem;
   padding: 2rem;
   box-shadow: 2px 2px 2px #111111;
@@ -18,8 +21,11 @@
 
 .dark-background:hover {
   /* background-color: darkslateblue; */
-  background-image: linear-gradient(to right, darkcyan, darkslateblue);
-  opacity: 0.96;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 139, 139, 0.99),
+    rgba(72, 61, 139, 0.99)
+  );
   box-shadow: 2px 2px 4px #111111;
 }
 
@@ -37,4 +43,8 @@
 
 .chat-container {
   /* border-radius: 1rem; */
+}
+
+.colorized {
+  line-height: 2;
 }
