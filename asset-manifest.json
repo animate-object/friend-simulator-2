@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/friend-simulator-2/static/css/main.ba3f14c9.chunk.css",
-    "main.js": "/friend-simulator-2/static/js/main.6d8b2c5f.chunk.js",
-    "main.js.map": "/friend-simulator-2/static/js/main.6d8b2c5f.chunk.js.map",
+    "main.css": "/friend-simulator-2/static/css/main.e2b64c2f.chunk.css",
+    "main.js": "/friend-simulator-2/static/js/main.564fe8a3.chunk.js",
+    "main.js.map": "/friend-simulator-2/static/js/main.564fe8a3.chunk.js.map",
     "runtime-main.js": "/friend-simulator-2/static/js/runtime-main.d34da67c.js",
     "runtime-main.js.map": "/friend-simulator-2/static/js/runtime-main.d34da67c.js.map",
-    "static/js/2.e7383444.chunk.js": "/friend-simulator-2/static/js/2.e7383444.chunk.js",
-    "static/js/2.e7383444.chunk.js.map": "/friend-simulator-2/static/js/2.e7383444.chunk.js.map",
+    "static/js/2.7bcabf4a.chunk.js": "/friend-simulator-2/static/js/2.7bcabf4a.chunk.js",
+    "static/js/2.7bcabf4a.chunk.js.map": "/friend-simulator-2/static/js/2.7bcabf4a.chunk.js.map",
     "static/js/3.2c02430b.chunk.js": "/friend-simulator-2/static/js/3.2c02430b.chunk.js",
     "static/js/3.2c02430b.chunk.js.map": "/friend-simulator-2/static/js/3.2c02430b.chunk.js.map",
     "index.html": "/friend-simulator-2/index.html",
-    "static/css/main.ba3f14c9.chunk.css.map": "/friend-simulator-2/static/css/main.ba3f14c9.chunk.css.map",
-    "static/js/2.e7383444.chunk.js.LICENSE.txt": "/friend-simulator-2/static/js/2.e7383444.chunk.js.LICENSE.txt",
+    "static/css/main.e2b64c2f.chunk.css.map": "/friend-simulator-2/static/css/main.e2b64c2f.chunk.css.map",
+    "static/js/2.7bcabf4a.chunk.js.LICENSE.txt": "/friend-simulator-2/static/js/2.7bcabf4a.chunk.js.LICENSE.txt",
     "static/media/1.3f02d3bc.png": "/friend-simulator-2/static/media/1.3f02d3bc.png",
     "static/media/10.1297cf7b.png": "/friend-simulator-2/static/media/10.1297cf7b.png",
     "static/media/11.a2e09cc1.png": "/friend-simulator-2/static/media/11.a2e09cc1.png",
@@ -35,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d34da67c.js",
-    "static/js/2.e7383444.chunk.js",
-    "static/css/main.ba3f14c9.chunk.css",
-    "static/js/main.6d8b2c5f.chunk.js"
+    "static/js/2.7bcabf4a.chunk.js",
+    "static/css/main.e2b64c2f.chunk.css",
+    "static/js/main.564fe8a3.chunk.js"
   ]
 }
